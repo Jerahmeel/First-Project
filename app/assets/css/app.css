@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Good Vibes - Demo';
+  src: url("../fonts/GoodVibes.woff2") format("woff2"), url("../fonts/GoodVibes.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url("../fonts/ChampagneLimousines.woff2") format("woff2"), url("../fonts/ChampagneLimousines.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .custom-class {
   background-color: white;
   opacity: 0.8;
@@ -7,7 +19,12 @@
 .custom-class .banner-logo {
   color: #87289e;
   font-size: 50px;
-  font-family: good vibes;
+  font-family: "Good Vibes - Demo";
+}
+.custom-class .banner-text {
+  color: #b52ed6;
+  font-size: 30px;
+  font-family: "Champagne & Limousines";
 }
 
 .banner {
@@ -19,6 +36,19 @@
   width: 100%;
   background-image: url(../img/banner.jpg);
   background-position: center;
+}
+
+.cards-container {
+  padding: 10px 10px;
+  height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cards-container .card-content {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=app.css.map */

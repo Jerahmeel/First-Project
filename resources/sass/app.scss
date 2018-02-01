@@ -1,3 +1,5 @@
+
+@import 'partials/variables';
 .custom-class{
     background-color:white;
     opacity: 0.8;
@@ -6,7 +8,12 @@
     .banner-logo{
         color: rgb(135, 40, 158);
         font-size: 50px;
-        font-family: good vibes;
+        font-family: $primaryFont;
+    }
+    .banner-text{
+        color: rgb(181, 46, 214);
+        font-size: 30px;
+        font-family: $secondaryFont;
     }
 }
 .banner{
@@ -19,3 +26,33 @@
         background-position: center;
     }
 }
+// .cards-container{
+//     width: 100%;
+//     height:500px;
+//     .card-content{
+//         border: solid 2px black;
+//         width: 30%;
+//         height: 80%;
+//         float: left;
+//         margin-right: 1%;
+//         margin-top: 2%;
+//         margin-left: 2%;
+//         margin-bottom: 2%;
+//     }
+// }
+
+.cards-container {
+    padding: 10px 10px;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .card-content {
+       height: 100%;
+       width: 100%; 
+       border: 1px solid black;
+   
+
+
+       }
+    }
