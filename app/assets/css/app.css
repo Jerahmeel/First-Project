@@ -49,6 +49,25 @@
   height: 100%;
   width: 100%;
   border: 1px solid black;
+  grid-template-rows: repeat(2, 1fr);
+}
+.cards-container .card-content .content-img {
+  position: center;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+.cards-container .card-content #card-img1 {
+  background-image: url(../img/bunny.jpg);
+  background-position: center;
+}
+.cards-container .card-content #card-img2 {
+  background-image: url(../img/moon.jpg);
+  background-position: center;
+}
+.cards-container .card-content #card-img3 {
+  background-image: url(../img/planes.jpg);
+  background-position: center;
 }
 
 /*# sourceMappingURL=app.css.map */
