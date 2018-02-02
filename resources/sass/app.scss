@@ -6,11 +6,7 @@
     opacity: 0.8;
     height: 100px;
     padding-top: 20px;
-    .banner-logo{
-        color: rgb(135, 40, 158);
-        font-size: 50px;
-        font-family: $primaryFont;
-    }
+   
     .banner-text{
         color: rgb(181, 46, 214);
         font-size: 30px;
@@ -45,6 +41,16 @@
 //     }
 // }
 
+.page-title{
+height: 20%;
+width:100%;
+padding:5% 5%;
+background-color: aliceblue;
+
+
+
+}
+
 .cards-container {
     padding: 20px 10px;
     height: 500px;
@@ -57,13 +63,52 @@
    
 
     .card-content {
-      
        height: 100%;
        width: 95%; 
       
        grid-template-rows: repeat(2, 1fr);
        padding: 2% 2%;
-       box-shadow: 10px 10px 5px grey;
+       
+       .container {
+        position: relative;
+        width: 100%;
+           
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #008CBA;
+            }
+            .text {
+                
+                color:black;
+                font-size: 20px;
+                position: relative;
+                top: -100%;
+                left: 50%;
+                padding: 0 5%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: justify;
+                background-color: aquamarine;
+            }
+        }
+      
+         .container:hover .overlay {
+            opacity: 1;
+            background-color: red;
+          }
+     
+      
+      
+
+       
 
        .content-img{
           position: center;
@@ -74,14 +119,29 @@
              background-size: 100%;
              background-repeat: no-repeat;
              border: 2px solid black;
-           
-         
        }
+       
+
+   
+        
        .content-text{
-           margin: 5% 2%;
+            margin: 4% 4%;
+           position: center;
+           color: transparent;
+          
+           text-transform: uppercase;
+           -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
 
        }
 
+       .content-text:hover {
+        color:black;
+
+    }
+     
+    
         #card-img1{
             
             background-image: url(../img/grizzly.jpg);
@@ -108,13 +168,16 @@
     grid-template-columns: repeat(2, 1fr);
 
     .grid-column1{
-        border: 1px solid black;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
+       
 
         .grid-img{
                height: 100%;
                width: 100%; 
                background-size: 70%;
                background-repeat: no-repeat;
+               
              
          }
   
@@ -135,12 +198,13 @@
          
     }
     .grid-column2{
-        border: 1px solid black;
+
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         .grid-col2-row{
-            border: 1px solid black;
-
+           
+            border-top: 1px solid black;
+    
             .grid-img{
                 height: 100%;
                 width: 100%; 
@@ -170,8 +234,41 @@
 }
 
 .footer{
-    height: 80%;
+    height: 300%;
     background-color: black;
     width:100%;
-    padding:5%;
+    padding-top:3%;
+    padding-bottom:5%; 
+    padding-left: 10%;
+    padding-right: 18%;
+
+   
+
+    .icons{
+  
+        height: 50px;
+        width: 50px; 
+        border-radius: 50%;
+        background-size: 115%;
+        background-repeat: no-repeat;
+        float: right;
+        margin-right: 1%;
+        
+}
+
+#fb{
+   
+   background-image: url(../img/fb.png);
+   background-position: center;
+}
+#insta{
+   
+    background-image: url(../img/insta.png);
+    background-position: center;
+ }
+ #twitter{
+   
+    background-image: url(../img/twitter.png);
+    background-position: center;
+ }
 }
